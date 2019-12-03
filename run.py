@@ -12,7 +12,7 @@ import sys
 import editdistance
 from colorama import Fore, Style
 
-whitespace_regex = re.compile(r"s+", re.MULTILINE)
+whitespace_regex = re.compile(r"\s+", re.MULTILINE)
 username_regex = re.compile('\((.*?)\)')
 
 
