@@ -1,11 +1,16 @@
 # Copy detector
 
 A simple script to detect very similar files via Levenshtein distance (edit distance).
+
+## Requirements
+[Python 3](https://www.python.org/downloads/)
+
 ## Installation
-    pip install -r requirements.txt
+    $ pip3 install -r requirements.txt
+    
 ## Usage
 
-    ./run.py -f java -p 1 example
+    $ python3 run.py -f java -p 1 example
 Returns 
 
      example\HalloWelt.java
@@ -14,7 +19,8 @@ Returns
      
 ### Params
 
-     $ ./run.py -h                                                                  
+     $ python3 run.py -h
+     
      usage: run.py [-h] [-f TYPE] [-t THRESHHOLD] [-p THREADS] [-l] [-m MAX] [-nc]  
                    input                                                            
                                                                                     
