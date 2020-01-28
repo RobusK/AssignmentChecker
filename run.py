@@ -69,7 +69,7 @@ def main():
     if (args.no_colors):
         Fore.YELLOW = Fore.RED = Fore.CYAN = Style.RESET_ALL = ''
 
-    search = ntpath.join(args.input, '**', '*.' + args.type)
+    search = os.path.join(args.input, "**",  '*.' + args.type)
 
     files = list(glob.glob(search, recursive=True))
     files = list(map(lambda x: readfile(x, args.max), files))
